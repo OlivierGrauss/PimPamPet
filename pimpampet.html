@@ -1,0 +1,332 @@
+<html>
+<head>
+<script type="text/javascript">
+function start() {
+
+document.getElementById('startButton').innerHTML = "Volgende";
+
+var randomQuest = Math.floor((Math.random() * 30) + 1);
+
+var randomLetter = Math.floor((Math.random() * 26) + 1);
+
+var vraag = "vraag";
+var letter ="letter";
+
+//vragen
+if(randomQuest === 1) {
+ var vraag = "Iets groens";
+} else if(randomQuest === 2) {
+ var vraag = "Iets wat je schoon kunt maken";
+} else if(randomQuest === 3) {
+ var vraag = "Een dier";
+} else if(randomQuest === 4) {
+ var vraag = "Een bekend persoon";
+} else if(randomQuest === 5) {
+ var vraag = "Een feestdag";
+} else if(randomQuest === 6) {
+ var vraag = "Iets blauws";
+} else if(randomQuest === 7) {
+ var vraag = "Een stad";
+} else if(randomQuest === 8) {
+ var vraag = "Een land";
+} else if(randomQuest === 9) {
+ var vraag = "Een Boom of plant";
+} else if(randomQuest === 10) {
+ var vraag = "Een bloem";
+} else if(randomQuest === 11) {
+ var vraag = "Een vogel";
+} else if(randomQuest === 12) {
+ var vraag = "Een Rivier";
+} else if(randomQuest === 13) {
+ var vraag = "Een gebergte";
+} else if(randomQuest === 14) {
+ var vraag = "Een gebouw";
+} else if(randomQuest === 15) {
+ var vraag = "Een oceaan";
+} else if(randomQuest === 16) {
+ var vraag = "Een drankje";
+} else if(randomQuest === 17) {
+ var vraag = "Iets zouts";
+} else if(randomQuest === 18) {
+ var vraag = "Iets zoets";
+} else if(randomQuest === 19) {
+ var vraag = "Een fruitsoort";
+} else if(randomQuest === 20) {
+ var vraag = "Een gerecht";
+} else if(randomQuest === 21) {
+ var vraag = "Een groente";
+} else if(randomQuest === 22) {
+ var vraag = "Een familielid";
+} else if(randomQuest === 23) {
+ var vraag = "Een sport";
+} else if(randomQuest === 24) {
+ var vraag = "Een gereedschapssoort";
+} else if(randomQuest === 25) {
+ var vraag = "Een sportclub";
+} else if(randomQuest === 26) {
+ var vraag = "Een vak op school";
+} else if(randomQuest === 27) {
+ var vraag = "Een dier dat in het water leeft";
+} else if(randomQuest === 28) {
+ var vraag = "Een film";
+} else if(randomQuest === 29) {
+ var vraag = "Een boek";
+} else if(randomQuest === 30) {
+ var vraag = "Een hond- of kattenras";
+} else {
+alert("error");
+}
+
+
+//letter
+if(randomLetter === 1) {
+ var letter = "A";
+} else if(randomLetter === 2) {
+ var letter = "B";
+} else if(randomLetter === 3) {
+ var letter ="C";
+} else if(randomLetter === 4) {
+ var letter = "D";
+} else if(randomLetter === 5) {
+ var letter ="E";
+} else if(randomLetter === 6) {
+ var letter = "F";
+} else if(randomLetter === 7) {
+ var letter ="G";
+} else if(randomLetter === 8) {
+ var letter = "H";
+} else if(randomLetter === 9) {
+ var letter ="I";
+} else if(randomLetter === 10) {
+ var letter = "J";
+} else if(randomLetter === 11) {
+ var letter ="K";
+} else if(randomLetter === 12) {
+ var letter = "L";
+} else if(randomLetter === 13) {
+ var letter ="M";
+} else if(randomLetter === 14) {
+ var letter = "N";
+} else if(randomLetter === 15) {
+ var letter ="O";
+} else if(randomLetter === 16) {
+ var letter = "P";
+} else if(randomLetter === 17) {
+ var letter ="Q";
+} else if(randomLetter === 18) {
+ var letter = "R";
+} else if(randomLetter === 19) {
+ var letter ="S"
+} else if(randomLetter === 20) {
+ var letter = "T";
+} else if(randomLetter === 21) {
+ var letter ="U";
+} else if(randomLetter === 22) {
+ var letter = "V";
+} else if(randomLetter === 23) {
+ var letter ="W";
+} else if(randomLetter === 24) {
+ var letter = "X";
+} else if(randomLetter === 25) {
+ var letter ="Y";
+} else if(randomLetter === 26) {
+ var letter = "Z";
+} else {
+alert("error");
+}
+
+
+document.getElementById("vraag").innerHTML = (''+vraag+' met de letter '+letter+'');
+
+}
+var playerOneScore= 0;
+function givePlayerOne() {
+ playerOneScore++;
+ document.getElementById("displayOne").innerHTML = playerOneScore;
+}
+
+function firstPlayer() {
+var naam1 = document.getElementById('naam1').value;
+
+document.getElementById('spelerEenText').innerHTML = naam1;
+
+}
+
+//FUNCTIE 2
+
+var playerTwoScore= 0;
+function givePlayerTwo() {
+ playerTwoScore++;
+ document.getElementById("displayTwo").innerHTML = playerTwoScore;
+}
+
+function secondPlayer() {
+var naam2 = document.getElementById('naam2').value;
+
+document.getElementById('spelerTweeText').innerHTML = naam2;
+}
+
+//FUNCTIE 3
+
+var playerThreeScore= 0;
+function givePlayerThree() {
+ playerThreeScore++;
+ document.getElementById("displayThree").innerHTML = playerThreeScore;
+}
+
+function thirdPlayer() {
+var naam3 = document.getElementById('naam3').value;
+
+document.getElementById('spelerDrieText').innerHTML = naam3;
+}
+
+//FUNCTIE 4
+
+var playerFourScore= 0;
+function givePlayerFour() {
+ playerFourScore++;
+ document.getElementById("displayVier").innerHTML = playerFourScore;
+}
+
+function fourthPlayer() {
+var naam4 = document.getElementById('naam4').value;
+
+document.getElementById('spelerVierText').innerHTML = naam4;
+}
+</script>
+
+<style>
+#box {
+ background-color: orange;
+ border: 5px solid black;
+ border-radius: 20px;
+}
+
+#title {
+ color: red;
+ text-align: center;
+}
+#startKnop {
+ height: 100px;
+ width: 150px;
+ background-color: pink;
+ border: 5px solid yellow;
+ border-radius: 10px;
+ margin-left: 10px;
+ margin-bottom: 10px;
+}
+
+#startButton {
+ color: red;
+ text-align: center;
+}
+#vraag{
+ color: red;
+ text-align: center;
+}
+
+#box1 {
+background-color: red;
+width: 150;
+}
+
+#knop1 {
+ height: 50px;
+ width: 150px;
+ background-color: green;
+ border: 2px solid black;
+}
+
+#box2 {
+background-color: red;
+ width: 150;
+}
+
+#knop2 {
+ height: 50px;
+ width: 150px;
+ background-color: green;
+ border: 2px solid black;
+}
+
+#box3 {
+background-color: red;
+width: 150;
+}
+
+#knop3 {
+ height: 50px;
+ width: 150px;
+ background-color: green;
+ border: 2px solid black;
+}
+
+#box4 {
+background-color: red;
+width: 150;
+}
+
+#knop4 {
+ height: 50px;
+ width: 150px;
+ background-color: green;
+ border: 2px solid black;
+}
+</style>
+</head>
+<body>
+<div id="box">
+<h1 id="title">Pim Pam Pet!</h1>
+<button id="startKnop" onClick="start()">
+<h2 id="startButton">Start!</h2>
+</button>
+<h1 id="vraag"></h1>
+</div>
+
+<table border="0">
+<tr>
+<td>
+<div id="box1">
+<b id="spelerEenText">Speler 1</b><b> score: </b><b id="displayOne"></b>
+<br />
+<input value="Speler1" type"text" id="naam1" onChange="firstPlayer()"></input>
+<br />
+<button id="knop1" onclick="givePlayerOne()">+1</button>
+</div>
+</td>
+<td>
+<div id="box2">
+<b id="spelerTweeText">Speler 2</b><b> score: </b><b id="displayTwo"></b>
+<br />
+<input value="Speler2" type"text" id="naam2" onChange="secondPlayer()"></input>
+<br />
+<button id="knop2" onclick="givePlayerTwo()">+1</button>
+</div>
+</td>
+<td>
+<div id="box3">
+<b id="spelerDrieText">Speler 3</b><b> score: </b><b id="displayThree"></b>
+<br />
+<input value="Speler3" type"text" id="naam3" onChange="thirdPlayer()"></input>
+<br />
+<button id="knop3" onclick="givePlayerThree()">+1</button>
+</div>
+</td>
+<td>
+<div id="box4">
+<b id="spelerVierText">Speler 4</b><b> score: </b><b id="displayVier"></b>
+<br />
+<input value="Speler4" type"text" id="naam4" onChange="fourthPlayer()"></input>
+<br />
+<button id="knop4" onclick="givePlayerFour()">+1</button>
+</div>
+</td>
+</tr>
+</table>
+
+<audio>
+	<source src="https://docs.google.com/file/d/0B2Etyx3FPAnxclJwSWN6SHJvTTA/edit" />
+</audio>
+
+</body>
+</html>
